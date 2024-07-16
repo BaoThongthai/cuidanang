@@ -1,7 +1,7 @@
 #iframeContainer {
     display: none;
     width: 400px; /* Kích thước mặc định */
-    height: 465px; /* Kích thước mặc định */
+    height: 470px; /* Kích thước mặc định */
     position: absolute; /* Đặt vị trí tuyệt đối */
     top: 60px; /* Khoảng cách từ nút */
     left: 80px;
@@ -22,6 +22,10 @@
     border: none;
     overflow: hidden; /* Ẩn thanh cuộn */
 }
+#iframeContainer {
+    display: none; /* Ẩn khung iframe ban đầu */
+    transition: display 0.3s ease; /* Áp dụng transition cho hiệu ứng mượt mà */
+  }
 .no-scrollbar {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */

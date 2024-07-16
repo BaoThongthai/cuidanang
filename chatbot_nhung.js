@@ -5,9 +5,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById('showButton').addEventListener('click', function() {
   var iframeContainer = document.getElementById('iframeContainer');
-  if (iframeContainer.style.display === 'none' || iframeContainer.style.display === '') {
-      iframeContainer.style.display = 'block';
-  } else {
-      iframeContainer.style.display = 'none';
-  }
+  iframeContainer.style.display = (iframeContainer.style.display === 'none' || iframeContainer.style.display === '') ? 'block' : 'none';
 });
