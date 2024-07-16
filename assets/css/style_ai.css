@@ -1,10 +1,10 @@
 #iframeContainer {
     display: none;
-    width: 600px; /* Kích thước mặc định */
-    height: 550px; /* Kích thước mặc định */
+    width: 400px; /* Kích thước mặc định */
+    height: 465px; /* Kích thước mặc định */
     position: absolute; /* Đặt vị trí tuyệt đối */
     top: 60px; /* Khoảng cách từ nút */
-    left: 0;
+    left: 80px;
     z-index: 1000; /* Đảm bảo iframe hiển thị trên cùng */
 }
 #showButton {
@@ -17,17 +17,26 @@
     z-index: 1001; /* Đảm bảo nút hiển thị trên cùng */
 }
 #embeddedWebsite {
-    width: 110%;
+    width: 90%;
     height: 110%;
     border: none;
+    overflow: hidden; /* Ẩn thanh cuộn */
+}
+.no-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 /* Responsive cho iPhone 12 Pro */
 @media (max-width: 390px) {
     #iframeContainer {
 
         display: none;
-        width: 380px; /* Chiều rộng 100% */
-        height: 480px; /* Chiều cao 100% */
+        width: 300px; /* Chiều rộng 100% */
+        height: 400px; /* Chiều cao 100% */
         position: absolute; /* Đặt vị trí tuyệt đối */
         top: 60px; /* Khoảng cách từ nút */
         left: 0;
